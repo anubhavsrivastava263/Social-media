@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SocialPulse Analyzer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <video
+      class="bg-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80"
+    >
+      <source
+        src="https://videos.pexels.com/video-files/853889/853889-hd_1920_1080.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div class="video-overlay"></div>
+
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-name">SocialPulse</div>
+            <div class="brand-tag">Content Analyzer</div>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <div class="nav-dropdown">
+            <button class="nav-trigger" type="button">Overview <span class="caret">▼</span></button>
+            <div class="nav-menu">
+              <a href="#overview">Platform overview</a>
+              <a href="#analyzer">Content analyzer</a>
+              <a href="#results">Results dashboard</a>
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-trigger" type="button">Features <span class="caret">▼</span></button>
+            <div class="nav-menu">
+              <a href="#features">Post upload</a>
+              <a href="#features">PDF & OCR extraction</a>
+              <a href="#features">Engagement scoring</a>
+              <a href="#features">Smart suggestions</a>
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-trigger" type="button">Benchmark <span class="caret">▼</span></button>
+            <div class="nav-menu">
+              <a href="#benchmarks">Instagram benchmarks</a>
+              <a href="#benchmarks">LinkedIn performance</a>
+              <a href="#benchmarks">TikTok content trends</a>
+              <a href="#benchmarks">Social channel comparison</a>
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-trigger" type="button">Insights <span class="caret">▼</span></button>
+            <div class="nav-menu">
+              <a href="#insights">Engagement score</a>
+              <a href="#insights">Audience quality</a>
+              <a href="#insights">CTA and hashtag ideas</a>
+              <a href="#insights">Content performance tips</a>
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-trigger" type="button">How it works <span class="caret">▼</span></button>
+            <div class="nav-menu">
+              <a href="#analyzer">Upload a file</a>
+              <a href="#analyzer">Paste copy</a>
+              <a href="#results">Review insights</a>
+              <a href="#features">Improve content</a>
+            </div>
+          </div>
+        </nav>
+
+        <button class="nav-cta" type="button">Get started</button>
+      </header>
+
+      <main>
+        <section class="hero" id="overview">
+          <div class="hero-copy">
+            <p class="eyebrow">Social media strategy, made smarter</p>
+            <h1>Measure, extract, and improve every post before it goes live.</h1>
+            <p class="lede">
+              Upload a PDF or screenshot, pull out the copy, and get actionable engagement insights
+              powered by rule-based social scoring — no paid AI required.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#analyzer" class="primary-btn">Analyze a post</a>
+              <a href="#features" class="secondary-btn">Explore features</a>
+            </div>
+
+            <div class="trust-row" aria-label="Platform highlights">
+              <span>OCR + PDF parsing</span>
+              <span>CTA detection</span>
+              <span>Hashtag analysis</span>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="panel-header">
+              <span class="status-dot"></span>
+              <span>Live performance snapshot</span>
+            </div>
+
+            <div class="metric-grid">
+              <div class="metric-card accent">
+                <span class="metric-label">Engagement</span>
+                <strong>8.4%</strong>
+                <small>+2.1% vs last week</small>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">CTR</span>
+                <strong>4.9%</strong>
+                <small>Strong CTA</small>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">Reach</span>
+                <strong>42.8K</strong>
+                <small>+18.6%</small>
+              </div>
+              <div class="metric-card wide">
+                <div class="mini-chart">
+                  <span style="height: 32%"></span>
+                  <span style="height: 46%"></span>
+                  <span style="height: 58%"></span>
+                  <span style="height: 76%"></span>
+                  <span style="height: 88%"></span>
+                  <span style="height: 94%"></span>
+                </div>
+                <div>
+                  <span class="metric-label">Audience trend</span>
+                  <strong>+23.7% growth</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="brand-strip" id="benchmarks">
+          <span>Instagram</span>
+          <span>LinkedIn</span>
+          <span>Facebook</span>
+          <span>Threads</span>
+          <span>X / Twitter</span>
+          <span>TikTok</span>
+        </section>
+
+        <section class="features" id="features">
+          <div class="section-heading">
+            <p class="eyebrow alt">Why teams use it</p>
+            <h2>Everything needed to improve content performance.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">01</div>
+              <h3>Post upload</h3>
+              <p>Drop in a PDF, screenshot, or visual creative and extract your post copy instantly.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">02</div>
+              <h3>OCR + extraction</h3>
+              <p>Turn image-based posts into readable text with reliable PDF and OCR processing.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">03</div>
+              <h3>Content scoring</h3>
+              <p>Review word count, hashtags, mentions, emoji use, question framing, and CTAs.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">04</div>
+              <h3>Actionable tips</h3>
+              <p>Get ranked suggestions for stronger hooks, clearer CTAs, and higher engagement.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">05</div>
+              <h3>Channel fit</h3>
+              <p>See how your message aligns with social best practices for each platform.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">06</div>
+              <h3>Content planning</h3>
+              <p>Use the output to refine captions, creative direction, and publishing strategy.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="analyzer-panel" id="analyzer">
+          <div class="analysis-copy">
+            <p class="eyebrow alt">Free social content analyzer</p>
+            <h2>Run a quick content audit before you publish.</h2>
+            <ul>
+              <li>Check clarity, engagement structure, and post readability</li>
+              <li>Spot missing CTA, hashtag, or question opportunities</li>
+              <li>Compare post performance signals before launch</li>
+            </ul>
+          </div>
+
+          <div class="analysis-card">
+            <form id="upload-form">
+              <label class="dropzone" id="dropzone" for="file-input">
+                <input
+                  id="file-input"
+                  name="file"
+                  type="file"
+                  accept=".pdf,.png,.jpg,.jpeg,.webp,application/pdf,image/png,image/jpeg,image/webp"
+                />
+                <span class="drop-icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 16V4m0 0l-4 4m4-4l4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 16.5V18a2 2 0 002 2h12a2 2 0 002-2v-1.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                <span class="dropzone-title">Drag a file here</span>
+                <span class="dropzone-meta">PDF, PNG, JPG, or WEBP · max 15 MB</span>
+                <span class="picker">Choose a file</span>
+              </label>
+
+              <div class="file-chip" id="file-chip" hidden>
+                <span class="file-chip-mark" aria-hidden="true">✓</span>
+                <span>
+                  <span class="file-chip-label">Ready to analyze</span>
+                  <span class="file-name" id="file-name"></span>
+                </span>
+              </div>
+
+              <p class="error" id="client-error" role="alert" hidden></p>
+
+              <div class="divider"><span>or paste text</span></div>
+
+              <label class="paste-label" for="paste-input">Post copy</label>
+              <textarea
+                id="paste-input"
+                rows="6"
+                placeholder="Paste a caption or post here if you don’t have a PDF or screenshot…"
+              ></textarea>
+
+              <button type="submit" id="submit-btn" disabled>Analyze post</button>
+            </form>
+
+            <div class="status" id="status" hidden>
+              <span class="spinner" aria-hidden="true"></span>
+              <span id="status-text">Working…</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="insights" id="insights">
+          <div class="section-heading compact">
+            <p class="eyebrow alt">Social intelligence</p>
+            <h2>Turn raw content into winning creative decisions.</h2>
+          </div>
+
+          <div class="insight-grid">
+            <div class="insight-card">
+              <label>Engagement score</label>
+              <strong>89/100</strong>
+              <span>High potential based on CTA and framing</span>
+            </div>
+            <div class="insight-card">
+              <label>Content quality</label>
+              <strong>Strong</strong>
+              <span>Clear voice, strong hook, and concise structure</span>
+            </div>
+            <div class="insight-card">
+              <label>Suggested edits</label>
+              <strong>+3 ideas</strong>
+              <span>Includes hashtag, CTA, and readability changes</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="results" id="results">
+          <div class="empty-state" id="empty-state">
+            <p class="results-kicker">Analysis output</p>
+            <h2>Results appear here after your scan.</h2>
+            <p>
+              Stats, extracted text, and ranked recommendations will be shown once a file or caption is analyzed.
+            </p>
+          </div>
+
+          <div class="results-body" id="results-body" hidden>
+            <div class="results-head">
+              <div>
+                <p class="results-kicker">Analysis output</p>
+                <h2>Insights dashboard</h2>
+              </div>
+              <span class="source-pill" id="source-pill"></span>
+            </div>
+
+            <h3>Snapshot</h3>
+            <div class="stats" id="stats"></div>
+
+            <h3>Extracted text</h3>
+            <pre class="extracted" id="extracted"></pre>
+
+            <div class="suggest-head">
+              <h3>Suggestions</h3>
+              <button type="button" class="ghost" id="copy-btn">Copy suggestions</button>
+            </div>
+            <ol class="suggestions" id="suggestions"></ol>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-branding">
+          <div class="brand-wrap footer-brand-wrap">
+            <div class="brand-mark">S</div>
+            <div>
+              <div class="brand-name">SocialPulse</div>
+              <div class="brand-tag">Content Analyzer</div>
+            </div>
+          </div>
+          <p>Turn social content into smarter publishing decisions with faster extraction, scoring, and idea generation.</p>
+        </div>
+
+        <div class="footer-links-wrap">
+          <div class="footer-col">
+            <h4>Overview</h4>
+            <a href="#overview">Platform</a>
+            <a href="#analyzer">Analyzer</a>
+            <a href="#results">Results</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Features</h4>
+            <a href="#features">Post upload</a>
+            <a href="#features">OCR extraction</a>
+            <a href="#features">Content scoring</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Benchmark</h4>
+            <a href="#benchmarks">Instagram</a>
+            <a href="#benchmarks">LinkedIn</a>
+            <a href="#benchmarks">TikTok</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Insights</h4>
+            <a href="#insights">Engagement score</a>
+            <a href="#insights">Content quality</a>
+            <a href="#insights">Suggestions</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Working</h4>
+            <a href="#analyzer">Upload</a>
+            <a href="#analyzer">Analyze</a>
+            <a href="#results">Improve</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
